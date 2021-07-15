@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightgray;
+    opacity: 1;
+    background-image:  radial-gradient(#b30838 2px, transparent 2px), radial-gradient(#b30838 2px, lightgray 2px);
+    background-size: 80px 80px;
+    background-position: 0 0,40px 40px;
+}
+
+.main-container {
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#logo-boolean {
+    height: 200px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+#ticket {
+    position: relative;
+    height: 300px;
+    width: 800px;
+    background-color: #b30838;
+    justify-self: center;
+    border-radius: 30px;
+    border: 2px solid black;
+    overflow: hidden;
+}
+
+
+.logo-train,
+.foot-ticket {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 15%;
+    background-color: white;
+    padding: 0 20px;
+}
+
+.logo-train {
+    justify-content: flex-end;
+}
+
+.logo-train img,
+.foot-ticket img {
+    height: 90%;
+}
+
+.ticket-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 30px;
+    width: 100%;
+    height: 70%;
+}
+
+.ticket-text {
+    font-size: 22px;
+    font-weight: bold;
+    color: lightgray;
+    margin-bottom: 10px;
+
+}
+
+.ticket-text span {
+    margin-left: 10px;
+    color: white;
+}
+
+#totalprice-barred {
+    text-decoration: line-through;
+    color: black;
+}
+
+.foot-ticket {
+    justify-content: space-between;
+    position:absolute;
+    bottom: 0;
+    left: 0;
+}
+

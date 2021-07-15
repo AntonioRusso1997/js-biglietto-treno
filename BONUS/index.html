@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Calcolo prezzo del biglietto treno</title>
+</head>
+<body>
+    <div class="main-container">
+        <img id="logo-boolean" src="img/logo-boolean-treni.png" alt="Logo Boolean treni">
+        
+        <div id="ticket">
+            <div class="logo-train">
+                <img src="img/logo-boolean-treni.png" alt="logo boolean treni">
+            </div>
+
+            <div class="ticket-content">
+                <div class="ticket-text"><p>NOME: <span>PIPPO</span></p></div>
+                <div class="ticket-text"><p>COGNOME: <span>BAUDO</span></p></div>
+                <div class="ticket-text"><p>ETA': <span id="eta"></span></p></div>
+                <div class="ticket-text"><p>BIGLIETTO VALIDO PER: <span id="km"></span></p></div>
+                <div class="ticket-text"><p>PREZZO TOTALE:<span id="totalprice"></span><span id="totalprice-barred"></span><span id="price-reduced"></span></p></div>
+            </div>
+
+            <div class="foot-ticket">
+                <p>*per i minorenni: il prezzo del biglietto sarà scontato del 20%. <br>
+                *per gli over 65: il prezzo del biglietto sarà scontato del 40%</p>
+                <img src="img/logo-boolean.png" alt="Logo boolan">
+            </div>          
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
