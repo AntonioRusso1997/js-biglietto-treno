@@ -17,14 +17,18 @@ console.log("Età del passegero: " + eta + " anni");
 
 //Creo la variabile del prezzo base (con arrotondamento a due cifre dopo la virgola)
 var price = priceKm * Km;
-console.log("prezzo base: " + price.toFixed(2) + "€");
+console.log("prezzo base: " + price.toFixed(2) + " €");
 
 //Creo variabili per eventuale sconto se minorenni o over 65
 if (eta < 18)
 {
     console.log("prezzo ridotto: " + (price * 0.8).toFixed(2) + " €");
 }
-else (eta >= 65)
+else if (eta >= 65)
 {
     console.log("prezzo ridotto: " + (price * 0.6).toFixed(2) + " €");
+}
+else
+{
+    console.log("prezzo totale: " + price.toFixed(2) + " €");
 }
