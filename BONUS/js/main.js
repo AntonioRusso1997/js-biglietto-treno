@@ -15,7 +15,7 @@ document.getElementById("km").innerHTML = (Km + " Km");
 
 var eta = parseInt(prompt("Quanti anni hai?"));
 console.log("Età del passegero: " + eta + " anni");
-document.getElementById("eta").innerHTML = (Km + "  anni");
+document.getElementById("eta").innerHTML = (eta + "  anni");
 
 //Creo la variabile del prezzo base (con arrotondamento a due cifre dopo la virgola)
 var price = priceKm * Km;
